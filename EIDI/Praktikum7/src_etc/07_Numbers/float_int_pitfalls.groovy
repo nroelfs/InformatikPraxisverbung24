@@ -31,26 +31,25 @@ comp(0.0, 10.0, 1.0)
 println(tax1(10) + " " + tax2(10))
 println(tax1(100) + " " + tax2(100))
 println(tax1(1000000000) + " " + tax2(1000000000))
-//println(tax1(2000000000) + " " + tax2(2000000000))
+println(tax1(2000000000) + " " + tax2(2000000000))
 
-def tax1_fixed() {
-    double price = 100.0
-    double taxRate = 0.2
-    double tax = price * taxRate
-    double total = price + tax
-    return total
+
+
+def double tax1_fixed(double gross){
+  double prod = gross * 19.0
+  return prod / 100.0
 }
 
-def tax2_fixed() {
-    double price = 100.0
-    double taxRate = 0.2
-    double tax = price * taxRate
-    double total = price + tax
-    return total
+def double tax2_fixed(double gross){
+  // return gross / 100 * 19
+  double deci = gross / 100.0
+  return  deci * 19.0
 }
 
-// Beispielaufrufe
-println "Total with tax1_fixed: " + tax1_fixed()
-println "Total with tax2_fixed: " + tax2_fixed()
+println("\n-----------------------\nTax_fixed\n")
+println(tax1_fixed(10) + " " + tax2_fixed(10))
+println(tax1_fixed(120) + " " + tax2_fixed(120))
+println(tax1_fixed(1000000000) + " " + tax2_fixed(1000000000))
+println(tax1_fixed(2000000000) + " " + tax2_fixed(2000000000))
 
 

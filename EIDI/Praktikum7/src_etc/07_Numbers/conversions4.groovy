@@ -37,4 +37,4 @@ while (o > 0) {
 
 println("converted n= >" + n + "<   to   >" + result + "<");
 println("Hex: ${n} -> Decimal: ${intToHex(n)}"); // ez way to convert to hex
-println("converted n= > ${n} <   to   >" ${reHex} "<");
+println("converted n= >" + n + "<   to   > " + resHex + " <");

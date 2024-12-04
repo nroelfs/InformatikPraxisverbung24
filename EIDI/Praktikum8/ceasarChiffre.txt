@@ -18,7 +18,7 @@ print:			; print(C:*from, D:*to)
 	MOV B, 0
 .loop:
 	MOV A, [C]	; Get char from var
-	ADD A, offset	;
+	ADD A, [offset]	;
 	MOV [D], A	; Write to output
 	INC C
 	INC D
